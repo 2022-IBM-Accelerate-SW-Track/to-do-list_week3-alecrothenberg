@@ -1,31 +1,33 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import "./About.css";
-import profile_pic from "../assets/profile_pic.jpg";
-
+import alec_photo from "../assets/headshot.png";
 export default class About extends Component {
   render() {
     return (
       <div>
-        {/* <p>Design your About me page </p> */}
+        <div>
         <div class="split left">
           <div className="centered">
-            <img
+            <img 
               className="profile_image"
-              src={profile_pic}
+              img src = {alec_photo}
               alt="Profile Pic"
-            ></img>
+              ></img>
           </div>
         </div>
         <div className="split right">
           <div className="centered">
-            <div className="name_title">Your Name</div>
+            <div className="name_title">Alec Rothenberg</div>
             <div className="brief_description">
-              Tell us about yourself in a few sentences. Tell us your interests
-              and say a fun fact about yourself.
+              My name is Alec Rothenberg and I am a junior at the University of Florida. I am majoring in computer 
+              science with a minor in engineering innovation and a certificate in arificial intelligence. On campus, I am involved
+              with the engineering leadership council and lambda chi alpha. As well, I am a research assistant at the GLaDE
+              labarortory. In my free time, I like to go to the gym and cook.
             </div>
           </div>
         </div>
       </div>
-    );
+      </div>
+    )
   }
 }
